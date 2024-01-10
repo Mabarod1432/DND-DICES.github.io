@@ -9,13 +9,16 @@
 }
 
 /*animations*/
-@keyframes example {
-  from {background-color: red;}
-  40% {background-color:blue;}
-  to {background-color: yellow;}
+@keyframes cswap {
+  from {color: red;}
+  10%{ color: rgb(115, 255, 0);}
+  20% {color: rgb(38, 149, 201);}
+  30% {color: rgb(18, 122, 74);}
+  40% {color:blue;}
+  to {color:black;}
 }
 
-@keyframes slidein {
+@keyframes slideIn {
   from {
     margin-left: 100%;
     width: 300%;
@@ -45,7 +48,33 @@ header{
   animation-duration: 3s;
 
 }
+.head{
+  animation:cswap;
+  animation-duration: 3s;
+  animation-delay: 500ms;
+}
 
 .selector{
   margin-left: 2%;
+  margin-top: 4%;
+  margin-bottom:10% ;
+  display: block;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  animation: slideIn;
+  animation-duration: 3s;
+  animation-delay: 400ms;
+
+}
+img{
+margin: 1%;
+width: 5%;
+display: flexbox;
+align-items: center;
+align-content:center;
+
+}
+img:hover{
+  transform: translateY(+10px);
 }
