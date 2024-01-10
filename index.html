@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="src/App.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dices</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/App.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dnd dices</title>
+
+    <script src="src/js/dices.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Dices for all your dnd needs</h1>
+    </header>
+    <div class="selector">
+      <label for="type">Select an option:</label>
+      <select name="Wich type you need" id="type">
+        <option value="4">1D4</option>
+        <option value="6">1D6</option>
+        <option value="8">1D8</option>
+        <option value="10">1D10</option>
+        <option value="20">1D20</option>
+      </select>
+      <h3>How many?</h3>
+      <input type="number" min="1" max="3" id="quantity" />
+      <p>maximum 3</p>
+      <button id="print" onclick="diceRoll()">ROLL!</button>
+
+      <div class="wrapper" id="result"></div>
+
+      <script src="src/js/dices.js">
+
+      </script>
+    </div>
+  </body>
 </html>
